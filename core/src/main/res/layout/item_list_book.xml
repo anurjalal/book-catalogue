@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/iv_book"
+        android:layout_width="143dp"
+        android:layout_height="198dp"
+        android:contentDescription="@string/img_game_description"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/iv_book"
+        android:text="@string/book_title"
+        android:textColor="@color/text"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/score_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/iv_book"
+        android:text="@string/book_rating_title"
+        android:textColor="@color/text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/tv_score"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/score_title"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/iv_book"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:text="@string/book_rating_title"
+        android:textColor="@color/text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/author_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_score"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/iv_book"
+        android:text="@string/book_author_title"
+        android:textColor="@color/text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/author_title"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/iv_book"
+        android:text="@string/book_author_title"
+        android:textColor="@color/text"
+        android:textSize="16sp" />
+
+</RelativeLayout>
