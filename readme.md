@@ -3,4 +3,4 @@ You can search books in this app and save it to favorite list.
 
 API documentation : https://developers.google.com/books
 
-Using Koin for dependency injection and implement clean architecture.
+Using Koin for dependency injection and implement clean architecture and modularization.
